@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meu Diário Virtual</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- CAPA -->
+
+<div class="tela" id="capa">
+
+    <h1 class="logo">
+        Meu Diário Virtual
+    </h1>
+
+    <button class="btn" onclick="abrirCadastro()">
+        Entrar
+    </button>
+
+</div>
+
+<!-- CADASTRO -->
+
+<div class="formulario" id="cadastro">
+
+    <h2>Cadastro</h2>
+
+    <input
+        type="text"
+        id="usuario"
+        placeholder="Nome de usuário">
+
+    <input
+        type="password"
+        id="senha"
+        placeholder="Senha (mínimo 12 caracteres)">
+
+    <button class="btn" onclick="cadastrar()">
+        Criar Conta
+    </button>
+
+</div>
+
+<!-- DIÁRIO -->
+
+<div class="diario" id="diario">
+
+    <div class="topo-diario">
+
+        <h2>📖 Meu Diário</h2>
+
+        <div>
+
+            <button
+                class="btn"
+                onclick="criarPagina()">
+                Nova Página
+            </button>
+
+            <button
+                class="btn sair"
+                onclick="sair()">
+                Sair
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="paginas"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
