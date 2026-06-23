@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#ffdce8;
+    min-height:100vh;
+}
+
+.tela{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.logo{
+    font-family:'Pacifico', cursive;
+    font-size:4rem;
+    color:black;
+    margin-bottom:40px;
+}
+
+.btn{
+    border:none;
+    background:#ff9ec1;
+    color:white;
+    padding:12px 25px;
+    border-radius:15px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#ff82b1;
+}
+
+.formulario{
+    display:none;
+    max-width:400px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+}
+
+.formulario h2{
+    margin-bottom:20px;
+}
+
+.formulario input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:2px solid #ffdce8;
+    border-radius:10px;
+}
+
+.diario{
+    display:none;
+    padding:30px;
+}
+
+.topo-diario{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.sair{
+    margin-left:10px;
+}
+
+.pagina-caderno{
+
+    width:100%;
+
+    min-height:400px;
+
+    margin-bottom:25px;
+
+    padding:30px;
+
+    font-size:18px;
+
+    line-height:35px;
+
+    border:none;
+
+    border-left:5px solid #ff9ec1;
+
+    border-radius:10px;
+
+    resize:none;
+
+    outline:none;
+
+    background:
+    repeating-linear-gradient(
+        white,
+        white 34px,
+        #d7e7ff 35px
+    );
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
